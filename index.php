@@ -16,38 +16,44 @@
 
     <div class="row justify-content-center  scene_element scene_element--fadeinleft">
 				<?php include('errors.php'); ?>
-		</div>
+    </div>
+    
+    <div class="bodycontainer">
 
-    <div class= "loginformcontainer">
-      <div class="row justify-content-center logocontainer">
-        <img src ="resource/logo.png"> 
+      <div class= "row justify-content-center ">
+
+        <div class="col-lg-4 col-md-5 col-sm-10 justify-content-center  scene_element scene_element--fadeinright">
+        
+          <div class="profilecard">
+            <div class="row logocontainer justify-content-center">
+              <img src ="resource/logo.png"> 
+            </div>
+          
+            <div class="row loginformcontainer">
+              <div  class="col-md-12 col-sm-12">
+                <form method="post" action="index.php">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="upassword" name="upassword" placeholder="Password" required>
+                  </div>
+
+                  <div class="form-group">
+                    <select class="form-control" id="usertype" name="usertype">
+                      <option value="Lecturer">Lecturer</option>
+                      <option value="Course Coordinator">Course Coordinator</option>
+                      <option value="Program Coordinator">Program Coordinator</option>
+                    </select>
+                  </div>
+
+                  <button type="submit" class="loginbtn" name="loginuser">Submit</button>
+                </form>
+              <div>
+            </div>     
+          </div>
+        </div>
       </div>
-
-      <div class="row justify-content-center">
-        <div  class="col-sm-6 col-md-5 col-lg-3">
-          <form method="post" action="index.php">
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="upassword" name="upassword" placeholder="Password" required>
-            </div>
-
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">User Role</label>
-              <select class="form-control" id="usertype" name="usertype">
-                <option value="Lecturer">Lecturer</option>
-                <option value="Course Coordinator">Course Coordinator</option>
-                <option value="Program Coordinator">Program Coordinator</option>
-              </select>
-            </div>
-
-            <button type="submit" class="btn btn-primary" name="loginuser">Submit</button>
-          </form>
-        <div>
-      </div>     
     </div>
 
   </body>

@@ -128,13 +128,19 @@ body::-webkit-scrollbar { width:0 !important; }
     
   }
 
+  .loginbtn{
+    min-width: 200px;
+    min-height: 40px;
+    border-radius: 20px 20px 20px 20px; 
+  }
+
   
   .loginformcontainer{
-    padding: 2%; width:100%; margin-top: 50px;
+    padding-left:10%; padding-right: 10%; margin-top: 20px;
   }
   
   .logocontainer img{
-    display: block; max-width:230px; max-height:95px; width: auto; height: auto; margin: 50px;
+    display: block; max-width:230px; max-height:95px; width: auto; height: auto; margin: 30px;
   }
   
   
