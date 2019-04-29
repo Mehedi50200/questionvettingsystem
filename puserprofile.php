@@ -44,9 +44,9 @@
 
                 <?php 
                 $username =$_SESSION['username'];           
-                $conn = new mysqli('localhost', 'root', 'sony50200' ,'saifur');
+                $conn = new mysqli('localhost', 'root', '' ,'saifur');
                 $sql = "SELECT * FROM users WHERE username='$username'";
-                $query = mysqli_query($conn, $sql) or die(mysqli_error()); 
+                $query = mysqli_query($conn, $sql) or die($mysqli->error()); 
 
                 if ($row = mysqli_fetch_assoc($query)) :?>                    
                 <?php $pdfid1= $row['id']; ?>

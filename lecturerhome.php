@@ -51,7 +51,7 @@
       <div class = "main">            
        
           <?php
-          $connect = new mysqli('localhost', 'root', 'sony50200' ,'saifur');
+          $connect = new mysqli('localhost', 'root', '' ,'saifur');
           $username = $_SESSION['username'];
          // $sql = "SELECT * FROM course WHERE lecturer1='$username' OR lecturer2='$username'";
           $sql = "SELECT * FROM course WHERE vettera='$username' OR vetterb='$username'";              

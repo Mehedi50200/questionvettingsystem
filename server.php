@@ -7,7 +7,7 @@
 	$errors = array(); 
 
 	// connect to database
-	$connect = new mysqli('localhost', 'root', 'sony50200' ,'saifur');
+	$connect = new mysqli('localhost', 'root', '' ,'saifur');
 
 
 	if ( $connect->connect_error){

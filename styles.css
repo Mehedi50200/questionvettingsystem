@@ -1,6 +1,11 @@
 /* Normal Changes to */
 body{
- background: linear-gradient(to left, #fffefe,#f1eded);
+
+ /*background: url(resource/hi.jpg) no-repeat center center;
+ background-size: cover;
+ 
+min-height: 660px;*/
+background: #ffffff;
 }
 
 body p { 
@@ -91,6 +96,8 @@ body::-webkit-scrollbar { width:0 !important; }
   
   .navbar{
     box-shadow: -1px 1px 30px 5px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to left,#FF4B2B,#fff);
+    font-weight: 600;
   }
   
   .panelname{
@@ -142,6 +149,16 @@ body::-webkit-scrollbar { width:0 !important; }
   .logocontainer img{
     display: block; max-width:230px; max-height:95px; width: auto; height: auto; margin: 30px;
   }
+
+  .loginform{
+    border-radius: 10px;
+    box-shadow: -1px 5px 15px 5px rgba(0, 51, 73, 0.2);
+    padding:30px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background: #29224D;
+  }
   
   
   
@@ -182,7 +199,8 @@ body::-webkit-scrollbar { width:0 !important; }
 
   .coursewidget {
     flex-basis: 320px; height: 120px; margin: 5px; box-shadow: -1px 1px 30px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 6px; background: white; position: relative; overflow: hidden;
+    border-radius: 6px; background:linear-gradient(to left, #70e1f5,#ffd194);
+    position: relative; overflow: hidden;
   }
 
   .pdfviewer{
@@ -212,7 +230,7 @@ body::-webkit-scrollbar { width:0 !important; }
 
 
   .coursewidget:hover {
-    transform: translateY(-5px); background: linear-gradient(to left, #EB3349, #F45C43); 
+    transform: translateY(-10px); background: linear-gradient(to left, #EB3349, #F45C43); 
     box-shadow: -1px 1px 30px 5px rgba(0, 51, 73, 0.4); font-weight: 700; transition: transform 0.3s ease;
   }
 
@@ -229,20 +247,18 @@ body::-webkit-scrollbar { width:0 !important; }
   }
 
   .coursecode {
-    font-weight: 700; font-size: 13pt; height: 120px; color: #EB3349; padding: 40px 5px 0px 10px; 
+    font-weight: 700; font-size: 14pt; height: 120px; color: #EB3349; padding: 40px 5px 0px 10px; 
     justify-content: center; align-items: center;  text-align: center;
   }
 
   .coursename {
-    font-weight: 400; padding: 30px 5px 0px 10px; font-size: 13pt;
+    font-weight: 400; padding: 30px 5px 0px 10px; font-size: 15pt;width: 150px;
     height: 120px; color: rgb(138, 2, 18); box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
     border-radius: 0px 7px 7px 0px; justify-content: center; align-items: center; text-align: center;
   }
   
   .coursecredit {
-    padding: 35px 10px 0px 0px; font-weight: 400; font-size: 14px; color: rgb(160, 4, 4);
-    text-align: center;border-radius: 7px 7px 0px 0px; justify-content: center;
-    align-items: center; text-align: center;
+    padding: 15px 10px 0px 0px; font-weight: 400; font-size: 17px; color: rgb(160, 4, 4);
   }
   
 
@@ -311,6 +327,7 @@ body::-webkit-scrollbar { width:0 !important; }
     align-content: center;
     justify-content: center;
     text-align: center;
+    background: #FFE4C4;
   }
 
   .contact{

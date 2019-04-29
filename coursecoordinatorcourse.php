@@ -50,7 +50,7 @@
 
     <body> 
 
-        <div class= "bodycontainer">
+        <div class= "cbodycontainer">
             <div class="row justify-content-center">
                 <div class="addwidget"
                     data-toggle="collapse" data-target="#collapsableAddForm"
@@ -76,9 +76,9 @@
                             
                         <?php
                             $coursecode = $_GET['id'];
-                            $conn = new mysqli('localhost', 'root', 'sony50200' ,'saifur');
+                            $conn = new mysqli('localhost', 'root', '' ,'saifur');
                             $sql = "SELECT * FROM `course` WHERE coursecode='$coursecode' ";
-                            $query = mysqli_query($conn, $sql) or die(mysqli_error());                             
+                            $query = mysqli_query($conn, $sql) or die($mysqli->error());                             
                            
 
                             while ($row = mysqli_fetch_assoc($query)) :?>
@@ -114,9 +114,9 @@
                         <select class="custom-select"  name="vetterb" required>                            
                             <?php
                                 $coursecode = $_GET['id'];
-                                $conn = new mysqli('localhost', 'root', 'sony50200' ,'saifur');
+                                $conn = new mysqli('localhost', 'root', '' ,'saifur');
                                 $sql = "SELECT * FROM `course` WHERE coursecode='$coursecode' ";
-                                $query = mysqli_query($conn, $sql) or die(mysqli_error());                             
+                                $query = mysqli_query($conn, $sql) or die($mysqli->error());                             
                             
 
                                 while ($row = mysqli_fetch_assoc($query)) :?>
@@ -173,9 +173,9 @@
             <?php
             $coursecode = $_GET['id'];
             $pdfid1="";              
-            $conn = new mysqli('localhost', 'root', 'sony50200' ,'saifur');
+            $conn = new mysqli('localhost', 'root', '' ,'saifur');
             $sqlpdf1 = "SELECT * FROM `pdffiles` WHERE coursecode='$coursecode' AND question='1' ";
-            $querypdf1 = mysqli_query($conn, $sqlpdf1) or die(mysqli_error());              
+            $querypdf1 = mysqli_query($conn, $sqlpdf1) or die($mysqli->error());              
 
             if ($row = mysqli_fetch_assoc($querypdf1)) :?>                    
             <?php $pdfid1= $row['id']; ?>
@@ -202,7 +202,7 @@
                 </div>                
                 <div class="col-5 scene_element scene_element--fadeinright">                    
                     <?php 
-                    $conn = new mysqli('localhost', 'root', 'sony50200' ,'saifur');                      
+                    $conn = new mysqli('localhost', 'root', '' ,'saifur');                      
                     $sqlcomment1 = "SELECT * FROM comment WHERE pdfid='$pdfid1'";
                     $querycomment1 = $conn->query($sqlcomment1);?>
                     
@@ -244,7 +244,7 @@
                        
                         <?php
                         $sqlsfa1 = "SELECT * FROM pdffiles WHERE id='$pdfid1'";
-                        $querysfa1 = mysqli_query($conn, $sqlsfa1) or die(mysqli_error()); 
+                        $querysfa1 = mysqli_query($conn, $sqlsfa1) or die($mysqli->error()); 
                         
                         while ($row = mysqli_fetch_assoc($querysfa1)) :?>
                         <div class="row justify-content-center ">
@@ -269,9 +269,9 @@
             <?php
             $coursecode = $_GET['id'];
             $pdfid2="";              
-            $conn = new mysqli('localhost', 'root', 'sony50200' ,'saifur');
+            $conn = new mysqli('localhost', 'root', '' ,'saifur');
             $sqlpdf2 = "SELECT * FROM `pdffiles` WHERE coursecode='$coursecode' AND question='2' ";
-            $querypdf2 = mysqli_query($conn, $sqlpdf2) or die(mysqli_error());              
+            $querypdf2 = mysqli_query($conn, $sqlpdf2) or die($mysqli->error());              
 
             if ($row = mysqli_fetch_assoc($querypdf2)) :?>                    
             <?php $pdfid2= $row['id']; ?>
@@ -298,7 +298,7 @@
                 </div>                
                 <div class="col-5 scene_element scene_element--fadeinright">                    
                     <?php 
-                    $conn = new mysqli('localhost', 'root', 'sony50200' ,'saifur');                      
+                    $conn = new mysqli('localhost', 'root', '' ,'saifur');                      
                     $sqlcomment2 = "SELECT * FROM comment WHERE pdfid='$pdfid2'";
                     $querycomment2 = $conn->query($sqlcomment2);?>
                     
@@ -340,7 +340,7 @@
                     
                         <?php
                         $sqlsfa2 = "SELECT * FROM pdffiles WHERE id='$pdfid2'";
-                        $querysfa2 = mysqli_query($conn, $sqlsfa2) or die(mysqli_error()); 
+                        $querysfa2 = mysqli_query($conn, $sqlsfa2) or die($mysqli->error()); 
                         
                         while ($row = mysqli_fetch_assoc($querysfa2)) :?>
                         <div class="row justify-content-center ">

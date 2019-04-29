@@ -1,6 +1,6 @@
 <?php 
 
-$connect = new mysqli('localhost', 'root', 'sony50200' ,'saifur');
+$connect = new mysqli('localhost', 'root', '' ,'saifur');
 $pdfid= $_GET['pdfid'];
 $coursecode = $_GET['coursecode'];
 $sql ="DELETE FROM pdffiles WHERE id='$pdfid'";

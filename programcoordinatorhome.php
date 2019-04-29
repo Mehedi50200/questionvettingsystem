@@ -45,10 +45,10 @@
       <div class = "main">    
        
           <?php
-          $conn = new mysqli('localhost', 'root', 'sony50200' ,'saifur');
+          $conn = new mysqli('localhost', 'root', '' ,'saifur');
           $username = $_SESSION['username'];
           $sql = "SELECT * FROM `course` WHERE lecturer1='$username' OR programcoordinator='$username' ";    
-          $query = mysqli_query($conn, $sql) or die(mysqli_error());
+          $query = mysqli_query($conn, $sql) or die($mysqli->error());
 
           while($row = mysqli_fetch_assoc($query)) :?>    
           

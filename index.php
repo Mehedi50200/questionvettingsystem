@@ -24,7 +24,7 @@
 
         <div class="col-lg-4 col-md-5 col-sm-10 justify-content-center  scene_element scene_element--fadeinright">
         
-          <div class="profilecard">
+          <div class="loginform">
             <div class="row logocontainer justify-content-center">
               <img src ="resource/logo.png"> 
             </div>

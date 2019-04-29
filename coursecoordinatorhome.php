@@ -47,10 +47,10 @@
             <div class = "main">    
        
             <?php
-            $conn = new mysqli('localhost', 'root', 'sony50200' ,'saifur');
+            $conn = new mysqli('localhost', 'root', '' ,'saifur');
             $username = $_SESSION['username'];
             $sql = "SELECT * FROM `course` WHERE coursecoordinator='$username'";      
-            $query = mysqli_query($conn, $sql) or die(mysqli_error());
+            $query = mysqli_query($conn, $sql) or die($mysqli->error());
 
             while($row = mysqli_fetch_assoc($query)) :?>    
           
@@ -66,13 +66,13 @@
                   </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-5">
                   <div class="coursename">
                     <div class="title"> <p><?php echo $row['coursename'];?> </p></div>  
                   </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-4">
                   <div class="coursecredit">
                     <div class="title"> <p>Credit:  <?php echo $row['coursecredit'];?> </p></div>
                   </div>
